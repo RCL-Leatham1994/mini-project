@@ -201,11 +201,10 @@ SOCIAL
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
 }
 
 .section__card--about {
-  border-radius:0 16px 16px 0;
+  border-radius: 0 16px 16px 0;
   background-color:#ffeaaf;
   border-right: 20px solid #badcee;
 }
@@ -218,7 +217,7 @@ SOCIAL
 
 .section__description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -232,7 +231,7 @@ SOCIAL
   letter-spacing: 8px;
 }
 .section__img--wrapper img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   width: 60%;
   padding: 0 24px;
