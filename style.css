@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-  /* font-family: "Space Mono", monospace; */
+/* font-family: "Space Mono", monospace; */
 
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500px;
 }
 
 body {
   background-color: #edf1f1;
-  color:rgb(15, 14, 14)
+  color: rgb(15, 14, 14);
 }
 
 a {
-  color:rgb(15, 14, 14);
+  color: rgb(15, 14, 14);
   font-size: 20px;
   font-weight: 600;
   text-underline-offset: 4px;
@@ -44,12 +43,12 @@ NAV
 */
 
 nav {
-height: 60px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 8px 24px 12px;
-background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px 12px;
+  background-color: white;
 }
 
 .logo {
@@ -78,18 +77,17 @@ header {
   margin: 0 auto;
 }
 
-
 .row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-padding-right: 8px;
+  padding-right: 8px;
 }
 
 .row__course {
-border-left: 1px dashed #cbd5e1;
+  border-left: 1px dashed #cbd5e1;
 }
 
 .course {
@@ -129,7 +127,7 @@ border-left: 1px dashed #cbd5e1;
   border-right: 20px solid #badcee;
   border-radius: 0 16px 16px 0;
   padding: 40px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -139,7 +137,6 @@ border-left: 1px dashed #cbd5e1;
   justify-content: center;
   background-color: #fefefe;
 }
-
 
 .hero__img--wrapper {
   width: 50%;
@@ -184,7 +181,9 @@ SOCIAL
 */
 
 #about,
-#social {
+#social,
+#contact,
+#footer {
   padding: 24px 0;
   width: 100%;
   max-width: 1200px;
@@ -200,12 +199,11 @@ SOCIAL
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .section__card--about {
   border-radius: 0 16px 16px 0;
-  background-color:#ffeaaf;
+  background-color: #ffeaaf;
   border-right: 20px solid #badcee;
 }
 
@@ -217,12 +215,11 @@ SOCIAL
 
 .section__description {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
-.about__row, .social__row {
+.about__row,
+.social__row {
   justify-content: start;
 }
 .section__title {
@@ -230,16 +227,21 @@ SOCIAL
   font-family: "space Mono", monospace;
   letter-spacing: 8px;
 }
+
+.section__img--wrapper {
+  width: 50%;
+}
 .section__img--wrapper img {
-  max-width: 60%;
+  max-width: 70%;
   height: auto;
-  width: 60%;
+  width: 100%;
   padding: 0 24px;
 }
 
 .section__description--wrapper {
+  display: flex;
+  flex-direction: column;
   width: 70%;
-  padding: 0 24px;
 }
 .section__description--para {
   font-size: 24px;
@@ -247,3 +249,84 @@ SOCIAL
   margin-bottom: 24px;
 }
 
+/* 
+
+CONTACT
+
+*/
+
+.section__card--contact {
+  border: 1.5px dashed #c231c2;
+  width: 96%;
+  border-radius: 16px;
+}
+
+form {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 12px;
+}
+
+input,
+textarea {
+  margin-bottom: 24px;
+  font-size: 28px;
+  padding: 6px 12px;
+  width: 500px;
+  border-radius: 6px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #badcee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1.5px dashed #cbd5e1;
+  padding: 12px 20px;
+  border-radius: 20% 20% 0 0;
+}
+
+.footer__logo {
+  margin-bottom: 8px;
+}
+
+.footer__links {
+  margin-bottom: 16px;
+}
+
+.footer__link {
+  padding: 0 16px;
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+
+/*
+
+SMALLER SCREEN
+
+*/
+@media (max-width: 1024px) {
+  .section__description--para {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+}
